@@ -1,221 +1,285 @@
 <html>
+
 <head>
-  <title>Asteroides Cercanos a la Tierra (NEAs)</title>
+  <title>Actividades</title>
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-  
-<style type="text/css">
+
+  <style type="text/css">
     * {
       margin: 0;
-      padding: 0;
-      font-family:Raleway;
-      }
-	  
-     table {
-	    color:white;
-	    }
-	
-    .container1{
-	    display:flex;
-	    flex-flow:column;
-      justify-content: center;
-	    }
-	  
-    .container2{
-	    display:flex;
-	    flex-flow:row;
-	    }
-	 
-    a {
-      color:#0099FF;
-    }
-	  
-    .capa {
-	    background:black;
-	    height:40px;
-	    position:relative;
-	    padding:0;
+      font-family: Raleway;
     }
 
-    .imagen{
-      justify-content: center;
-    }
-
-    h2 {
-      text-align:center;
-      padding:0px 0px 0px 30px;	
-      font-size:40px;
-      width: 90%;
-    }
-    
-    h3 {
-      text-align:center;
-      padding:0px 0px 0px 30px;	
-      font-size:40px;
-    }
-	  
-    h4 {
-        padding:0px 0px 0px 30px;
-        font-size:16px;
-    }   
-    
     body {
-        background-color: black;
-    }
-    
-    #header_wrap2 {
-        justify-items: center;
-        align-items: flex-end;
-        margin:0px;
-    }
-    
-    #header {
-        padding:0px 0px 30px 0px;
-        margin:auto;
-        height:12px;
-        width:100%;
-        font-family:Raleway;
-        font-size:18px;
-        position: sticky;
-        top:0px;
-        background:#02284A;
-        z-index:3;
-    }
-    
-    ul.nav, .nav li {
-        list-style:none;
-    }
-    
-    .nav li a {
-        background-color:#02284A;
-        color:white;
-        text-decoration:none;
-        padding:10px 15px;
-        display:block;
-    }
-    
-    .nav li a:hover {
-        background-color:#021C34;
-    }
-    
-    .nav > li {
-        float:left;
-    }
-    
-    .nav li ul {
-        display:none;
-        position:absolute;
-        min-width:140px;
-        min-height:80;
-    }
-    
-    .nav li:hover > ul {
-        display:block;
-    }
-  
-    .indice {
-        background:#54ABFA;
-        margin:50px 10px 0 10px;
-        width:35%;
-        height:100%;
-        padding:20px 60px 20px 20px;
-        border-radius:3px;
-        position:sticky;
-        top:55px;
-        z-index:2;
-        display:block;
-    }
-	  
-    a.contenido{
-	      color:black;
-    }
-	  
-    .indice .indice_titulo {
-        font-size:20px;
-        color:black;
-        padding:0 0 0 10px;
-    }	
-	  
-    .indice .indice_lista{
-	      padding:0 0 0 30px;  
-	  }
-	
-    p{
-        width: 90%;
-        text-align: justify;
+      background-color: black;
     }
 
-    header{
-        display: flex;
-        justify-content: center;
-        width: 100%;
+
+
+    /* Título de la página */
+    .titulo {
+      display: flex;
+      justify-content: center;
+      background: black;
+      color: #066DCC;
+      font-weight: bold;
+      padding: 33px;
+      font-size: 60px
     }
 
-    .titulo{
-        display: flex;
-        justify-content: center;
-        background:black;
-        color:#066DCC; 
-        font-weight:bold; 
-        padding:33px; 
-        font-size:60px
-    }
 
-    .logo{
-        display: flex;
-        align-items: center;
-    }
 
-    .logoimg{
+    /* Logo INAOE */
+    .logoimg {
       display: flex;
       height: 120px;
       align-items: center;
+      margin: 15px;
     }
-  </style>  
+
+
+
+    /* Menú principal */
+    .container1 {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+    }
+
+    #header {
+      padding: 0px 0px 30px 0px;
+      margin: auto;
+      height: 16px;
+      width: 100%;
+      font-family: Raleway;
+      font-size: 18px;
+      position: sticky;
+      top: 0px;
+      background: #02284A;
+      z-index: 3;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    ul.nav,
+    .nav li {
+      list-style: none;
+    }
+
+    .nav li a {
+      background-color: #02284A;
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+    }
+
+    .nav li a:hover {
+      background-color: #0099FF;
+      transition: 0.5s;
+      transform: scale(1.2);
+    }
+
+    .nav>li {
+      float: left;
+    }
+
+    .nav li ul {
+      display: none;
+      position: absolute;
+      min-width: 140px;
+      min-height: 80;
+      margin: 5px 0 0 0;
+    }
+
+    .nav li ul li a {
+      background-color: #00080f;
+      font-size: 16px;
+    }
+
+    .nav li:hover>ul {
+      display: block;
+    }
+
+   
+
+
+
+    .container2 {
+      display: flex;
+      flex-flow: row;
+    }
+
+
+
+    /* Menú de la página */
+    .indice {
+      background: #54ABFA;
+      margin: 50px 10px 0 10px;
+      width: 35%;
+      height: 100%;
+      padding: 20px 60px 20px 20px;
+      border-radius: 3px;
+      position: sticky;
+      top: 55px;
+      z-index: 2;
+      display: block;
+      box-shadow: 5px 5px 4px #162635, -5px -5px 4px #6b8196;
+    }
+
+    a {
+      color: #0099FF;
+    }
+
+    a.contenido {
+      color: black;
+    }
+
+    .indice .indice_titulo {
+      font-size: 20px;
+      color: black;
+      padding: 0 0 0 10px;
+    }
+
+    .indice .indice_lista {
+      padding: 0 0 0 30px;
+    }
+
+
+
+    /* Texto general */
+    .texto {
+      background: #131313;
+      margin: 20px 20px 20px 10px;
+      border-radius: 1rem;
+      padding: 0 20px 0 20px;
+      box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
+    }
+
+    .capa {
+      background: #131313;
+      height: 40px;
+      position: relative;
+      padding: 0;
+    }
+
+    p {
+      padding: 0 20px 0 10px;
+      text-align: justify;
+      text-indent: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      padding: 0 20px 0 10px;
+      font-size: 40px;
+    }
+
+    h3 {
+      padding: 0 20px 0 10px;
+      font-size: 30px;
+    }
+
+    h4 {
+      padding: 0 20px 0 10px;
+      font-size: 20px;
+    }
+
+    
+
+    /* Tablas */
+    table {
+      color: white;
+    }
+
+
+
+    /* Listas o numeración */
+    .listas,
+    .numeracion {
+      padding: 0 20px 0 20px;
+      text-align: justify;
+    }
+
+    ul.listas,
+    ol {
+      font-family: Raleway;
+      padding: 0px 0px 0px 30px;
+    }
+
+    ol ol {
+      font-family: Raleway;
+      padding: 0px 0px 0px 30px;
+    }
+
+
+
+    /* Actividad diáctica */
+    .button {
+      padding: 20px 0px 20px 0px;
+    }
+
+    label {
+      color: black;
+      font-family: Raleway;
+    }
+
+    .preguntas {
+      background: white;
+      width: 80%;
+      height: auto;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+
+
+    /* Pie de página */
+    #header_wrap2 {
+      justify-items: center;
+      align-items: flex-end;
+      margin: 0px;
+    }
+  </style>
 
 </head>
 
-  <body>
-    <header>
-      <h3 class="titulo">
-        Asteroides Cercanos a la Tierra (NEAs)
-      </h3>
-      <img src="img/LOGO INAOE 2012 blanco PNG.png" alt="INAOE" class="logoimg">
-    </header>
+<body>
+  <header>
+    <h3 class="titulo">
+      Asteroides Cercanos a la Tierra (NEAs)
+    </h3>
+    <img src="img/LOGO INAOE 2012 blanco PNG.png" alt="INAOE" class="logoimg">
+  </header>
 
-    <hr color="#02284A" size=4>
+  
   <div class="container1">
     <div id="header">
       <ul class="nav">
-        <li><a href="https://asteroidesinaoe.github.io/">Inicio</a></li>
-        <li><a href="https://asteroidesinaoe.github.io/Actividades/">Actividades</a>
+        <li><a href="https://asteroidesinaoe.github.io/">INICIO</a></li>
+        <li><a href="">ASTEROIDES</a></li>
+        <li><a href="https://asteroidesinaoe.github.io/Actividades/">ACTIVIDADES</a>
           <ul>
-            <li><a href="https://asteroidesinaoe.github.io/Actividad-Curva-de-Luz/">Curva de Luz</a></li>
-            <li><a href="https://asteroidesinaoe.github.io/Actividad-rbitas-de-Asteroides/">Órbitas</a></li>
+            <li><a href="https://asteroidesinaoe.github.io/Actividad-Curva-de-Luz/">CURVAS DE LUZ</a></li>
+            <li><a href="https://asteroidesinaoe.github.io/Actividad-rbitas-de-Asteroides/">ÓRBITAS</a></li>
           </ul>
         </li>
-        <li><a href="https://asteroidesinaoe.github.io/Aprender-m-s/">Aprender más</a>
+        <li><a href="https://asteroidesinaoe.github.io/Aprender-mas/">APRENDER MÁS</a>
           <ul>
-      <li><a href="https://asteroidesinaoe.github.io/Rayos-cosmicos/">Rayos cósmicos</a></li>
-      <li><a href="https://asteroidesinaoe.github.io/CCD/">CCD</a></li>
-      <li><a href="https://asteroidesinaoe.github.io/MPO-Canopus/">MPO Canopus</a></li>
-      <li><a href="https://asteroidesinaoe.github.io/Fourier/">Análisis de Fourier</a></li>
+            <li><a href="https://asteroidesinaoe.github.io/Rayos-cosmicos/">RAYOS CÓSMICOS</a></li>
+            <li><a href="https://asteroidesinaoe.github.io/CCD/">CCD</a></li>
+            <li><a href="https://asteroidesinaoe.github.io/MPO-Canopus/">MPO CANOPUS</a></li>
+            <li><a href="https://asteroidesinaoe.github.io/Fourier/">ANÁLISIS DE FOURIER</a></li>
           </ul>
         </li>
-        <li><a href="https://asteroidesinaoe.github.io/Glosario/">Glosario</a></li>
-        <li><a href="https://asteroidesinaoe.github.io/Contacto/">Contacto</a></li>
+        <li><a href="https://asteroidesinaoe.github.io/Glosario/">GLOSARIO</a></li>
+        <li><a href="https://asteroidesinaoe.github.io/Contacto/">CONTACTO</a></li>
       </ul>
     </div>
-    
-  <div class="container2">
-    <div class="indice">
-      <h1 class="indice_titulo"><b>Contenido</b></h1>
-      <ul class="indice_lista">
-        <li><a class="contenido" href="#ind1" target="_top">¿Que son los rayos cósmicos?</a></li>
-        <li><a class="contenido" href="#ind2" target="_top">¿De donde vienen?</a></li>
-        <li><a class="contenido" href="#ind3" target="_top"> ¿Cómo se detectan?</a></li>
-      </ul>
-        
-    </div>	  
 
   <font color="white">
   <div class="capa"><a name="ind1"></a></div>
