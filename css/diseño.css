@@ -155,6 +155,11 @@ header{
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
   }
 
+  /*Imagenes*/
+  .imagen{
+    width: 50%;
+  }
+
   /*ELEMENTOS RESPONSIVOS*/
   .icon__menu{
     font-size: 26px;
@@ -214,7 +219,7 @@ a.contenido {
 }
 
 /* Texto general */
-.texto {
+.texto { 
   background: #131313;
   margin: 20px 20px 20px 10px;
   border-radius: 1rem;
@@ -360,7 +365,7 @@ label {
 }
 
 /*Ajustes tamaño de pantalla*/   
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
     .parte_superior{
         padding: 10px;
     }
@@ -379,7 +384,7 @@ label {
       position: sticky;
       left: 0;
       top: 158px;
-      width: 50%;
+      width: 40%;
       height: 0px;
       transition: all 300ms ease;
       z-index: 100;
@@ -428,14 +433,22 @@ label {
       display:none;
     }
       
+    /* Texto*/
+    h2{
+      font-size: 35px;
     }
+
+    .imagen{
+      width: 90%;
+    }
+}
 
 @media screen and (max-width: 400px){
     .modal-content {
       margin: auto;
       display: block;
-      width: 100%;
-      max-width: 400px;
+      width: 80%;
+      max-width: 700px;
     }
 }
 
